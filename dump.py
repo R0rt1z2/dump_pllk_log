@@ -118,7 +118,7 @@ def main():
         if not args.silent:
             print(log)
 
-        with open(args.output, "w") as f:
+        with open(args.output, "w", encoding="utf-8") as f:
             f.write(log)
 
         print("Saved to %s (%d bytes)" % (args.output, len(log)))
